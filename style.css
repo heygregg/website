@@ -1,0 +1,180 @@
+/* =========================
+   Serve a togliere margini e spazi di default del browser
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================
+   STILE GENERALE DELLA PAGINA
+   Sfondo e layout generale
+========================= */
+body {
+  background: linear-gradient(135deg, #14129b, #15ae0d);
+  color: #f8fafc;
+  min-height: 100vh;
+
+  /* serve per mettere header, contenuto e footer in colonna */
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   HEADER (barra in alto)
+   Contiene logo + menu di navigazione
+========================= */
+header {
+  padding: 20px 60px;
+
+  /* mette logo a sinistra e menu a destra */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* link del menu */
+nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* effetto quando passi sopra con il mouse */
+nav a:hover {
+  color: #000000;
+}
+
+
+/* =========================
+   HERO (sezione principale iniziale)
+   È la parte centrale con titolo grande e bottone
+========================= */
+.hero {
+  flex: 1; /* occupa tutto lo spazio disponibile */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* contenuto interno della hero */
+.hero-content {
+  max-width: 700px;
+}
+
+/* titolo grande con effetto gradient */
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+
+  /* effetto gradiente sul testo */
+  background: linear-gradient(90deg, #000000, #2b2b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* testo sotto il titolo */
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTTONE PRINCIPALE
+========================= */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* effetto hover sul bottone */
+.btn:hover {
+  background: #fffb28;
+  transform: translateY(-2px); /* leggero sollevamento */
+}
+
+
+/* =========================
+   SEZIONE CARDS
+   blocchi con informazioni (tipo features)
+========================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 40px;
+  flex-wrap: wrap; /* vanno a capo su schermi piccoli */
+}
+
+/* singola card */
+.card {
+  background: #fffb28);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+
+  /* effetto vetro (glassmorphism) */
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+/* effetto quando passi sopra la card */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #000000;
+}
+
+
+/* =========================
+   FOOTER (parte finale pagina)
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE (telefono/tablet)
+   cambia lo stile su schermi piccoli
+========================= */
+@media (max-width: 768px) {
+
+  /* riduce il titolo grande */
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  /* mette header in colonna invece che riga */
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
