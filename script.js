@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => { /*aspetto che tutta la pag
 
     /* redirect al link in nuova scheda */come
     window.open(
-      'https://www.linkedin.com/in/gregorio-clini-38949214b/',
+      'https://open.spotify.com/artist/1osX1AI2YS7ZYZNkkry7iJ?si=nlDXldYaQV-tkPOSzMfUWA',
       '_blank'
     );
   });
