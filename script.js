@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.querySelector('.btn');
+document.addEventListener('DOMContentLoaded', () => { /*aspetto che tutta la pagina HTML sia caricata prima di eseguire il codice; documen è la pagina web, addEventListener ascolta un evento e DOMContentLoader è l'evento che scatta quando la pagina è pronta */
+  const btn = document.querySelector('.btn'); /* cerca nella pagina un elemento con classe .btn e querySelector prende il primo elemento che trova */
 
-  btn.addEventListener('click', (e) => {
-    e.preventDefault(); // blocca il link #
+  btn.addEventListener('click', (e) => { /*evento del click, (e) sono le informazioni sul click */
+    e.preventDefault(); /* blocca il comportamento normale */
 
-    console.log('Click Spotify'); // tracking base
+    console.log('Click Spotify'); /* scrive un messaggio nella console del browser */
 
-    // redirect al link in nuova scheda
+    /* redirect al link in nuova scheda */come
     window.open(
       'https://www.linkedin.com/in/gregorio-clini-38949214b/',
       '_blank'
