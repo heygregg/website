@@ -1,0 +1,188 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   BODY - background invariato ma più “premium”
+========================= */
+body {
+  background: linear-gradient(145deg, #443a51, #6a5b7c);
+  color: #ded5e3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   HEADER - più moderno e “floating”
+========================= */
+header {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* nav più pulita */
+nav a {
+  color: #ded5e3;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* underline animato */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #a94e1f;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   HERO - molto più “artistico”
+========================= */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+/* titolo più impattante */
+.hero h2 {
+  font-size: 56px;
+  margin-bottom: 30px;
+  color: #000;
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+/* testo più soft */
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/* =========================
+   BUTTON - più “premium”
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #000000;
+  color: #ded5e3;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+  background: #a94e1f;
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* =========================
+   CARDS - effetto glass migliore
+========================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  padding: 25px;
+  border-radius: 16px;
+  width: 260px;
+
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #a94e1f;
+  background: rgba(169, 78, 31, 0.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .cards {
+    padding: 30px 15px;
+  }
+}
