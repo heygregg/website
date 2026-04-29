@@ -75,18 +75,33 @@ nav a:hover::after {
 /* =========================
    HERO - molto più “artistico”
 ========================= */
+
 .hero {
-  flex: 1;
+  position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 20px;
+
+  /* IMMAGINE DI BACKGROUND */
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.65); /* regola la trasparenza */
 }
 
 .hero-content {
-  max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
+
 
 /* titolo più impattante */
 .hero h2 {
@@ -97,13 +112,13 @@ nav a:hover::after {
   line-height: 1.1;
 }
 
-/* testo più soft */
+
 .hero p {
   font-size: 18px;
-  color: #cbd5e1;
+  color: #374151; /* grigio scuro elegante */
   margin-bottom: 40px;
-  opacity: 0.9;
 }
+
 
 /* =========================
    BUTTON - più “premium”
