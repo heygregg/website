@@ -15,7 +15,7 @@
 ========================= */
 body {
   background: linear-gradient(140deg, 	#443a51, #6a5b7c);
-  color: #f8fafc;
+  color: #ded5e3;
   min-height: 100vh;
 
   /* serve per mettere header, contenuto e footer in colonna */
@@ -44,7 +44,7 @@ header h1 {
 
 /* link del menu */
 nav a {
-  color: #ffffff;
+  color: #ded5e3;
   margin-left: 20px;
   text-decoration: none;
   transition: 0.3s;
