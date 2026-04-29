@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => { /*aspetto che tutta la pag
 
     console.log('Click Spotify'); /* scrive un messaggio nella console del browser */
 
-    /* redirect al link in nuova scheda 
+    /* redirect al link in nuova scheda */
     window.open(
       'https://open.spotify.com/artist/1osX1AI2YS7ZYZNkkry7iJ?si=nlDXldYaQV-tkPOSzMfUWA',
       '_blank'
