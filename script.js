@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => { /*aspetto che tutta la pag
 
     /* redirect al link in nuova scheda */
     window.open(
-      'https://open.spotify.com/artist/1osX1AI2YS7ZYZNkkry7iJ?si=nlDXldYaQV-tkPOSzMfUWA/',
+      'https://open.spotify.com/artist/1osX1AI2YS7ZYZNkkry7iJ?si=nlDXldYaQV-tkPOSzMfUWA',
       '_blank'
     );
   });
