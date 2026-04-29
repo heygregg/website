@@ -1,8 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.btn');
 
-const btn = document.querySelector('.btn');
+  btn.addEventListener('click', (e) => {
+    e.preventDefault(); // blocca il link #
 
-btn.addEventListener('click', function (event) {
-  event.preventDefault();
-  alert('Nuova musica in arrivo!');
+    console.log('Click Spotify'); // tracking base
+
+    // redirect a Spotify in nuova scheda
+    window.open(
+      'https://www.linkedin.com/in/gregorio-clini-38949214b/',
+      '_blank'
+    );
+  });
 });
-
