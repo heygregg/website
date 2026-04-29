@@ -78,6 +78,7 @@ nav a:hover {
 .hero h2 {
   font-size: 48px;
   margin-bottom: 20px;
+   white-space: nowrap;
 
   /* effetto gradiente sul testo */
   background: linear-gradient(90deg, #000000, #2b2b2b);
