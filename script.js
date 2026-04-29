@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Click Spotify'); // tracking base
 
-    // redirect a Spotify in nuova scheda
+    // redirect al link in nuova scheda
     window.open(
       'https://www.linkedin.com/in/gregorio-clini-38949214b/',
       '_blank'
