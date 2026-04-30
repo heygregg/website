@@ -126,6 +126,14 @@ nav a:hover::after {
   color: #374151;
   margin-bottom: 40px;
 }
+/* frase che entra dopo */
+.delay-text {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
 
 /* =========================
    BUTTON - più “premium”
