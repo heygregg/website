@@ -105,10 +105,8 @@ nav a:hover::after {
   color: #000;
   letter-spacing: 2px;
   line-height: 1.1;
-}
 
-/* animazione titolo hero */
-.hero h2 {
+  /* animazione */
   opacity: 0;
   transform: translateY(30px);
   animation: fadeSlideIn 1s ease-out forwards;
