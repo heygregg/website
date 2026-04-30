@@ -108,7 +108,7 @@ nav a:hover::after {
 
   /* animazione */
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(-70px);
   animation: fadeSlideIn 2s ease-out forwards;
 }
 
