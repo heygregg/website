@@ -105,18 +105,19 @@ nav a:hover::after {
   color: #000;
   letter-spacing: 2px;
   line-height: 1.1;
-
-  /* animazione */
   opacity: 0;
-  transform: translateY(-70px);
+  transform: translate3d(0, -70px, 0);
   animation: fadeSlideIn 2s ease-out forwards;
 }
 
-/* keyframes animazione */
 @keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -70px, 0);
+  }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
