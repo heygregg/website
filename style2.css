@@ -109,7 +109,7 @@ nav a:hover::after {
   /* animazione */
   opacity: 0;
   transform: translateY(40px);
-  animation: fadeSlideIn 1.5s ease-out forwards;
+  animation: fadeSlideIn 2s ease-out forwards;
 }
 
 /* keyframes animazione */
